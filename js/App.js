@@ -4,32 +4,6 @@ import HomePage from './pages/HomePage';
 
 export default class App extends Component {
   render() {
-    // return (
-    // <View style={styles.cotainer}>
-    //   <View style={styles.header}>
-    //     <Text style={{color: 'white'}}>首页</Text>
-    //   </View>
-    //   <ScrollView style={styles.center}>
-    //     <ArticleListItem style={styles.listItem} title="haha" author="xixi" date="2016-12-12" abstract="fck"/>
-    //     <ArticleListItem style={styles.listItem} title="haha" author="xixi" date="2016-12-12" abstract="fuck"/>
-    //     <ArticleListItem style={styles.listItem} title="haha" author="xixi" date="2016-12-12" abstract="fuck"/>
-    //     <ArticleListItem style={styles.listItem} title="haha" author="xixi" date="2016-12-12" abstract="fuck"/>
-    //     <ArticleListItem style={styles.listItem} title="haha" author="xixi" date="2016-12-12" abstract="fuck"/>
-    //     <ArticleListItem style={styles.listItem} title="haha" author="xixi" date="2016-12-12" abstract="fuck"/>
-    //     <ArticleListItem style={styles.listItem} title="haha" author="xixi" date="2016-12-12" abstract="fuck"/>
-    //     <ArticleListItem style={styles.listItem} title="haha" author="xixi" date="2016-12-12" abstract="fuck"/>
-    //     <ArticleListItem style={styles.listItem} title="haha" author="xixi" date="2016-12-12" abstract="fuck"/>
-    //     <ArticleListItem style={styles.listItem} title="haha" author="xixi" date="2016-12-12" abstract="fuck"/>
-    //     <ArticleListItem style={styles.listItem} title="haha" author="xixi" date="2016-12-12" abstract="fuck"/>
-    //     <ArticleListItem style={styles.listItem} title="haha" author="xixi" date="2016-12-12" abstract="fuck"/>
-    //     <ArticleListItem style={styles.listItem} title="haha" author="xixi" date="2016-12-12" abstract="fuck"/>
-    //     <ArticleListItem style={styles.listItem} title="haha" author="xixi" date="2016-12-12" abstract="fuck"/>
-    //     <ArticleListItem style={styles.listItem} title="haha" author="xixi" date="2016-12-12" abstract="fuck"/>
-    //     <ArticleListItem style={styles.listItem} title="haha" author="xixi" date="2016-12-12" abstract="fuck"/>
-    //     <ArticleListItem style={styles.listItem} title="haha" author="xixi" date="2016-12-12" abstract="fuck"/>
-    //   </ScrollView>
-    // </View>
-    // );
     let defaultName = 'HomePage';
     let defaultComponent = HomePage;
     return (
