@@ -11,7 +11,6 @@ export default class ArticleListItem extends Component {
       <View style={[this.props.style, {padding: 5}]}>
         <Text style={styles.title}>{this.props.title}</Text>
         <Text style={styles.author}>{this.props.author}</Text>
-        <Text style={styles.date}>{this.props.date}</Text>
         <Text style={styles.abstract}>{this.props.abstract}</Text>
       </View>
     );

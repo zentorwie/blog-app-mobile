@@ -21,20 +21,4 @@ export default class App extends Component {
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'stretch'
-  },
-  header: {
-    height: 40,
-    backgroundColor: '#4BA9ED',
-    padding: 10,
-    justifyContent: 'center'
-  },
-  center: {},
-  listItem: {
-    height: 160,
-    borderWidth: 0.5,
-  },
-});
+
