@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import App from './src/App'
+import App from './js/App'
 
 export default class Playground extends Component {
   render() {
