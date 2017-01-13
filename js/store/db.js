@@ -78,3 +78,9 @@ export var articleRepo = [
   },
 ];
 
+export function get(id) {
+  for (let i = 0; i < articleRepo.length; i++) {
+    if (articleRepo[i].id == id) return articleRepo[i];
+  }
+  return undefined;
+}

@@ -23,13 +23,15 @@ export default class HomePage extends Component {
   }
 
   jumpToArticle(articleId) {
+    const { navigator } = this.props;
     return function () {
-      const { navigator } = this.props;
       if (navigator) {
         navigator.push({
           name: 'ArticlePage',
-          articleId: articleId,
           component: ArticlePage,
+          params: {
+            articleId: articleId
+          }
         });
       }
     }
@@ -41,19 +43,21 @@ export default class HomePage extends Component {
         <View style={styles.header}>
           <Text style={styles.headerText}>首页</Text>
         </View>
-        <ScrollView>
-          {this.state.articles.map(
-            x => (
-              <TouchableOpacity onPress={this.jumpToArticle(x.id)} key={x.id} style={styles.listItem}>
-                <ArticleListItem
-                  title={x.title}
-                  author={x.author}
-                  abstract={x.abstract}
-                />
-              </TouchableOpacity>
-            )
-          )}
-        </ScrollView>
+        <View style={{backgroundColor: '#dfdfdf', padding: 2, flex: 1}}>
+          <ScrollView>
+            {this.state.articles.map(
+              x => (
+                <TouchableOpacity onPress={this.jumpToArticle(x.id)} key={x.id} style={styles.listItem}>
+                  <ArticleListItem
+                    title={x.title}
+                    author={x.author}
+                    abstract={x.abstract}
+                  />
+                </TouchableOpacity>
+              )
+            )}
+          </ScrollView>
+        </View>
       </View>
     );
   }
@@ -65,15 +69,19 @@ const styles = StyleSheet.create({
     alignItems: 'stretch'
   },
   header: {
-    height: 40,
+    height: 50,
     backgroundColor: '#4BA9ED',
-    padding: 10,
+    alignItems: 'center',
     justifyContent: 'center'
   },
-  headerText: {},
+  headerText: {
+    color: 'white',
+    fontSize: 20
+  },
   center: {},
   listItem: {
     maxHeight: 160,
-    borderWidth: 0.5,
+    margin: 2,
+    backgroundColor: 'white'
   },
 });

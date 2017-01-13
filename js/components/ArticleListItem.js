@@ -8,7 +8,7 @@ import {
 export default class ArticleListItem extends Component {
   render() {
     return (
-      <View style={[this.props.style, {padding: 5}]}>
+      <View style={[this.props.style, {padding: 10}]}>
         <Text style={styles.title}>{this.props.title}</Text>
         <Text style={styles.author}>{this.props.author}</Text>
         <Text style={styles.abstract}>{this.props.abstract}</Text>
